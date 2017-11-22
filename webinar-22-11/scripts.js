@@ -1,28 +1,28 @@
-
 const url = 'http://api.pexels.com/v1/search?per_page=9&page=1';
 const headers = new Headers({
   authorization: '563492ad6f91700001000001845b939d393843c869341924558835be'
 });
+
 const gallery = document.querySelector('.gallery');
 const form = document.querySelector('.search-form');
 const input = document.querySelector('#form-input');
 
-const getMediumPhotos = (photos) => photos.map(photo => photo.src.medium);
+const fetchImages = (searchQuery) =>
+  fetch(url + `&query=${searchQuery}`, {
+    method: 'get',
+    headers
+  })
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    }
 
-const fetchImages = (searchQuery) => {
-  return fetch(url + `&query=${searchQuery}`, {
-      method: 'get',
-      headers
-    })
-    .then(response => {
-      if (response.ok) {
-        return response.json();
-      }
+    throw new Error('error while fetching, ' + response.statusText);
+  })
+  .catch(err => console.log(err));
 
-      throw new Error('error while fetching, ' + response.statusText);
-    })
-    .catch(err => console.log(err));
-};
+const getMediumPhotos = (photos) =>
+  photos.map(photo => photo.src.medium);
 
 const renderGallery = (photos, parent) => {
   let htmlString = '';

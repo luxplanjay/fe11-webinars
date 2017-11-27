@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webinar 27.11</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <script type="text/lodash-template" id="card">
+    <div class="card">
+      <img src="<%- img %>" alt="" class="card-img">
+      <h2 class="card-title"><%- title %></h2>
+      <p class="card-descr"><%- descr %></p>
+      <a href="<%- link %>" target="_blank">read more...</a>
+      <ul class="meta">
+        <li class="meta-item"><%- author %></li>
+        <li class="meta-item"><%- date %></li>
+        <li class="meta-item"><%- source %></li>
+      </ul>
+    </div>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+  <script src="localStorage.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20rem;
+  color: #424242;
+  background-color: #fff;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+
+

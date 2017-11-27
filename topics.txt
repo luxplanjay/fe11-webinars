@@ -1,0 +1,6 @@
+ - JavaScript шаблонизация.
+ - localStorage и методы JSON stringify и parse.
+
+ - Модульность JavaScript,
+	CommonJS модули
+	ES6 import/export

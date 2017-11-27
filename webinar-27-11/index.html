@@ -27,6 +27,17 @@
     </div>
   </script>
 
+  <!-- Оставлю тут шаблон который использует внутри себя цикл для перебора массива -->
+  <!-- Как будто он получил объект с полем items в котором содержится массив -->
+  <!-- ВНИМАНИЕ: при написании шаблоне не используйте стрелочные функции, будет ошибка! -->
+  <script type="text/lodash">
+    <ul>
+      <% items.forEach(function(item) { %>
+        <li><%- item %></li>
+      <% }) %>
+    </ul>
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
   <script src="localStorage.js"></script>
   <script src="scripts.js"></script>

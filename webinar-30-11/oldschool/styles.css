@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__link {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 2px solid #424242;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #424242;
+}
+
+.menu__link--active {
+  background-color: #424242;
+  color: #fff;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "webinar-30-11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.9.0"
+  }
+}

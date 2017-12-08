@@ -1,0 +1,32 @@
+.Post {
+  display: flex;
+  padding: 20px 10px;
+}
+
+.Post--liked {
+  background-color: #8BC34A;
+}
+
+.Post__img {
+  margin-right: 20px;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.Post__author {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Post__text {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.Post__date {
+  font-size: 14px;
+  font-weight: 600;
+}

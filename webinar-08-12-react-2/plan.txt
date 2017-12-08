@@ -1,0 +1,11 @@
+- .env + NODE_PATH=src
+- default index
+- PropTypes
+- {...props}
+- Rendering collections, keys
+- props.children
+- Component composition
+
+- unique ids
+- classnames
+- styled components

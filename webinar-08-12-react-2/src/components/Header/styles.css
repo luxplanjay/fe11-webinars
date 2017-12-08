@@ -1,0 +1,10 @@
+.Header {
+  display: flex;
+  align-items: center;
+  color: #424242;
+  border-bottom: 2px solid #424242;
+}
+
+.Header__logo {
+  margin-right: 50px;
+}

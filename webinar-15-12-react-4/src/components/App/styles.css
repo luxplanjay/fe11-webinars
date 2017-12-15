@@ -1,0 +1,7 @@
+.App {
+  padding: 20px;
+  width: 600px;
+  margin: auto;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+}

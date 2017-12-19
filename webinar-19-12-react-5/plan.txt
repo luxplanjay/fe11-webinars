@@ -1,0 +1,9 @@
+- Component lifecycle
+  http://www.andreasreiterer.at/web-development/reactjs-lifecycle-methods/
+
+- API calls on mounting and on event
+
+- Повторение предыдущего материала
+
+
+563492ad6f91700001000001845b939d393843c869341924558835be

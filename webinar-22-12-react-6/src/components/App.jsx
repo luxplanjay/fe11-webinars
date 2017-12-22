@@ -4,6 +4,7 @@ import Nav from './Nav';
 import HomePage from 'pages/Home';
 import AboutPage from 'pages/About';
 import UsersPage from 'pages/Users';
+import Modal from './Modal';
 
 const navLinks = [
   {
@@ -21,9 +22,24 @@ const navLinks = [
 ];
 
 class App extends Component {
+  state = {
+    isVisible: false
+  };
+
+  toggleModal = () => {
+    this.setState(prevState => ({
+      isVisible: !prevState.isVisible
+    }));
+  };
+
   render() {
+    const { isVisible } = this.state;
+
     return (
       <div className="App">
+        <button onClick={this.toggleModal}>show modal</button>
+        {isVisible && <Modal onClose={this.toggleModal}>SOME CONTENT</Modal>}
+
         <h1>App component</h1>
         <Nav items={navLinks} />
         <Switch>

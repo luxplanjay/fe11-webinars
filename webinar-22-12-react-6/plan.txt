@@ -8,3 +8,6 @@
 - не забыть рассказать про homepage поле в package.json
 - рассказать про basename prop у BrowserRouter
 - https://goo.gl/ZsszQT
+
+styled-components
+  https://www.styled-components.com/

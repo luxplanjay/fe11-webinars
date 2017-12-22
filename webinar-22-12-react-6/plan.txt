@@ -1,0 +1,10 @@
+- Intro to routing
+- react-router
+- Handling routes
+- Nested Routes
+- Routing params
+
+*** Хаки под GitHub Pages ***
+- не забыть рассказать про homepage поле в package.json
+- рассказать про basename prop у BrowserRouter
+- https://goo.gl/ZsszQT
